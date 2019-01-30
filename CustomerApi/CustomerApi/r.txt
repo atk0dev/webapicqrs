@@ -1,0 +1,48 @@
+﻿
+1. Create Customer
+POST https://localhost:44395/api/customers
+{
+		"phones": [
+			{
+					"type":0,
+					"areacode":321,
+					"number": 1234567
+			}
+			
+			
+			],
+			"email":"test@email.com",
+			"name": "Test User",
+			"age": 123
+}
+
+2. Get Customer by email
+GET https://localhost:44395/api/customers/test@email.com
+
+3. Get Customer by id
+GET https://localhost:44395/api/customers/1
+
+4. Get All Customers
+GET https://localhost:44395/api/customers
+
+5. Update
+
+6. Delete
+
+
+
+
+
+Original doc
+https://www.red-gate.com/simple-talk/dotnet/c-programming/getting-started-with-cqrs-part-1/
+https://www.red-gate.com/simple-talk/dotnet/c-programming/getting-started-with-cqrs-part-2/
+
+
+EF commands
+dotnet ef migrations add CreateDatabase
+dotnet ef database update
+
+
+ToDo
+1. Add project with tests
+2. Add ui with Angular and Vue
